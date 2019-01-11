@@ -1,0 +1,21 @@
+version: '2'
+services:
+  fpm:
+   hostname: hyser.dva
+   image: ivanezko/zn-php
+   restart: always
+   ports:
+    - "45024:9000"
+   volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - ./server/fpm/php.ini:/usr/local/etc/php/php.ini
+    - ./server/fpm/ssmtp.conf:/etc/ssmtp/ssmtp.conf
+    - ./server/fpm/www.conf:/usr/local/etc/php-fpm.d/www.conf
+    - ./vendor:/var/www/vendor
+    - ./www:/var/www/site
+    - ./config:/var/www/config
+    - ./znaj:/var/www/znaj
+    - /mnt/storage/sites/hyser.com.ua/uploads:/var/www/site/wp-content/uploads
+    - /mnt/storage/sites/hyser.com.ua/cache:/var/www/site/wp-content/cache
+    - /mnt/storage/sites/hyser.com.ua/session:/session
+    - /var/lib/mysql/mysql.sock:/var/lib/mysql/mysql.sock
