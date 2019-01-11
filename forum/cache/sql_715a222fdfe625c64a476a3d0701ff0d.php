@@ -1,5 +1,5 @@
 <?php exit; ?>
-1547203739
+1547207732
 SELECT * FROM phpbb_bbcodes WHERE bbcode_id = 13
 1167
 a:1:{i:0;a:10:{s:9:"bbcode_id";s:2:"13";s:10:"bbcode_tag";s:7:"youtube";s:15:"bbcode_helpline";s:157:"Используйте Id видео - если url видео http://www.youtube.com/watch?v=XmloKWpj8Ww то вставьте [youtube]XmloKWpj8W[/youtube]";s:18:"display_on_posting";s:1:"1";s:12:"bbcode_match";s:31:"[youtube]{IDENTIFIER}[/youtube]";s:10:"bbcode_tpl";s:269:"<div class="video"><iframe width="640" height="390" src="//www.youtube.com/embed/{IDENTIFIER}?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe></div>
