@@ -1,0 +1,156 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_SITE_LOGO}</h1>
+<p>{L_SITE_LOGO_EXPLAIN}</p>
+
+<form id="sitelogo" method="post" action="{U_ACTION}">
+
+	<fieldset>
+		<legend>{L_SITE_LOGO_OPTIONS}</legend>
+
+		<dl>
+			<dt><label for="version">{L_VERSION}{L_COLON}</label><span class="version">{SITE_LOGO_VERSION}</span></dt>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_image">{L_SITE_LOGO_IMAGE}{L_COLON}</label><br /><span>{L_SITE_LOGO_IMAGE_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_image" type="text" id="site_logo_image" value="{SITE_LOGO_IMAGE}" size="40" maxlength="255" validate="string" /></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_width">{L_SITE_LOGO_WIDTH}{L_COLON}</label><br /><span>{L_SITE_LOGO_WIDTH_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_width" type="text" id="site_logo_width" value="{SITE_LOGO_WIDTH}" size="4" maxlength="4" validate="string" /> {L_PIXELS}</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_height">{L_SITE_LOGO_HEIGHT}{L_COLON}</label><br /><span>{L_SITE_LOGO_HEIGHT_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_height" type="text" id="site_logo_height" value="{SITE_LOGO_HEIGHT}" size="4" maxlength="4" validate="string" /> {L_PIXELS}</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_pixels">{L_SITE_LOGO_PIXELS}{L_COLON}</label><br /><span>{L_SITE_LOGO_PIXELS_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_pixels" type="number" id="site_logo_pixels" value="{SITE_LOGO_PIXELS}" min="0" max="99" /> {L_PIXELS}</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_left">{L_SITE_LOGO_LEFT}{L_COLON}</label><br /><span>{L_SITE_LOGO_LEFT_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_left" value="1" id="site_logo_left"<!-- IF SITE_LOGO_LEFT --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_left" value="0" <!-- IF not SITE_LOGO_LEFT --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_right">{L_SITE_LOGO_RIGHT}{L_COLON}</label><br /><span>{L_SITE_LOGO_RIGHT_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_right" value="1" id="site_logo_right"<!-- IF SITE_LOGO_RIGHT --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_right" value="0" <!-- IF not SITE_LOGO_RIGHT --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_position">{L_SITE_LOGO_POSITION}{L_COLON}</label></dt>
+			<dd>
+				<!-- BEGIN positions -->
+					<label><input type="radio" class="radio" id="site_logo_position" name="site_logo_position" value="{positions.VALUE}"<!-- IF positions.S_CHECKED --> checked="checked"<!-- ENDIF --> /> {positions.LABEL}</label>
+				<!-- END positions -->
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_remove">{L_SITE_LOGO_REMOVE}{L_COLON}</label><br /><span>{L_SITE_LOGO_REMOVE_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_remove" value="1" id="site_logo_remove"<!-- IF SITE_LOGO_REMOVE --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_remove" value="0" <!-- IF not SITE_LOGO_REMOVE --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_SEARCH_OPTIONS}</legend>
+
+		<dl>
+			<dt><label for="site_logo_move_search">{L_SITE_SEARCH_IN_NAVBAR}{L_COLON}</label><br /><span>{L_SITE_SEARCH_IN_NAVBAR_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_move_search" value="1" id="site_logo_move_search"<!-- IF SEARCH_TO_NAVBAR --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_move_search" value="0" <!-- IF not SEARCH_TO_NAVBAR --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_search_remove">{L_SITE_SEARCH_REMOVE}{L_COLON}</label><br /><span>{L_SITE_SEARCH_REMOVE_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_search_remove" value="1" id="site_search_remove"<!-- IF SITE_SEARCH_REMOVE --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_search_remove" value="0" <!-- IF not SITE_SEARCH_REMOVE --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_BANNER_OPTIONS}</legend>
+
+		<dl>
+			<dt><label for="site_logo_use_banner">{L_USE_BANNER}{L_COLON}</label><br /><span>{L_USE_BANNER_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_use_banner" value="1" id="site_logo_use_banner"<!-- IF USE_BANNER --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_use_banner" value="0" <!-- IF not USE_BANNER --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_banner_url">{L_SITE_LOGO_BANNER_IMAGE}{L_COLON}</label><br /><span>{L_SITE_LOGO_BANNER_IMAGE_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_banner_url" type="text" id="site_logo_banner_url" value="{BANNER_URL}" size="40" maxlength="255" validate="string" /></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_banner_height">{L_BANNER_HEIGHT}{L_COLON}</label></dt>
+			<dd><input name="site_logo_banner_height" type="text" id="site_logo_banner_height" value="{BANNER_HEIGHT}" size="4" maxlength="4" validate="string" /> {L_PIXELS}</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_banner_radius">{L_BANNER_RADIUS}{L_COLON}</label><br /><span>{L_BANNER_RADIUS_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_banner_radius" type="number" id="site_logo_banner_radius" value="{BANNER_RADIUS}" min="0" max="99" /> {L_PIXELS}</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_TEXT_OPTIONS}</legend>
+
+		<dl>
+			<dt><label for="site_logo_site_name_below">{L_SITE_NAME_BELOW}{L_COLON}</label><br /><span>{L_SITE_NAME_BELOW_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_site_name_below" value="1" id="site_logo_site_name_below"<!-- IF SITE_NAME_BELOW --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_site_name_below" value="0" <!-- IF not SITE_NAME_BELOW --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_use_override_colour">{L_USE_OVERRIDE_COLOUR}{L_COLON}</label><br /><span>{L_USE_OVERRIDE_COLOUR_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_use_override_colour" value="1" id="site_logo_use_override_colour"<!-- IF USE_OVERRIDE_COLOUR --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_use_override_colour" value="0" <!-- IF not USE_OVERRIDE_COLOUR --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_logo_override_colour">{L_OVERRIDE_COLOUR}{L_COLON}</label><br /><span>{L_OVERRIDE_COLOUR_EXPLAIN}</span></dt>
+			<dd><input name="site_logo_override_colour" type="text" id="site_logo_override_colour" value="{OVERRIDE_COLOUR}" size="6" maxlength="6" />&nbsp;<span style="background-color: #{OVERRIDE_COLOUR}">&nbsp; &nbsp;</span>&nbsp;&nbsp;<span>[ <a href="#" id="color_palette_toggle">{L_COLOUR_SWATCH}</a> ]</span><div id="color_palette_placeholder" style="display: none;" data-orientation="h" data-height="12" data-width="15" data-target="#site_logo_override_colour"></div></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_name_supress">{L_SITE_NAME_SUPRESS}{L_COLON}</label><br /><span>{L_SITE_NAME_SUPRESS_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_name_supress" value="1" id="site_name_supress"<!-- IF SITE_NAME_SUPRESS --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_name_supress" value="0" <!-- IF not SITE_NAME_SUPRESS --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_EXTENDED_SITE_DESCRIPTION}</legend>
+
+		<dl>
+			<dt><label for="site_logo_use_extended_desc">{L_USE_EXTENED_SITE_DESC}{L_COLON}</label><br /><span>{L_USE_EXTENED_SITE_DESC_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_use_extended_desc" value="1" id="site_logo_use_extended_desc"<!-- IF EXTENED_SITE_DESC --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_use_extended_desc" value="0" <!-- IF not EXTENED_SITE_DESC --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="extended_site_description">{L_EXTENDED_SITE_DESCRIPTION}{L_COLON}</label><br /><span>{L_EXTENDED_SITE_DESCRIPTION_EXPLAIN}</span></dt>
+			<dd><textarea name="site_logo_extended_site_description" id="site_logo_extended_site_description" rows="3" cols="50">{EXTENED_SITE_DESCRIPTION}</textarea></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_ACP_SUBMIT_CHANGES}</legend>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		</p>
+		{S_FORM_TOKEN}
+	</fieldset>
+</form>
+
+<!-- INCLUDE overall_footer.html -->

@@ -1,0 +1,33 @@
+#logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#logo {
+    display: block !important;
+    box-sizing: border-box;
+}
+
+.sl-headerbar {
+	background-image: url("{T_THEME_PATH}/images/bg_header.gif");
+	margin-bottom: 4px;
+	padding: 5px;
+	border-radius: 7px;
+}
+
+#sl-new-desc {
+	clear: left;
+}
+
+#sl-new-desc h1 {
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#sl-new-desc p {
+	line-height: 1.3em;
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+}

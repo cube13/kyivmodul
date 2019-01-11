@@ -1,0 +1,35 @@
+{
+	"name": "davidiq/reimg",
+	"type": "phpbb-extension",
+	"description": "Expands resized images using a lightbox-type modal.",
+	"homepage": "https://www.phpbb.com/customise/db/extension/reimg/",
+	"version": "3.0.0-b1",
+	"keywords": ["phpbb", "extension", "image", "resizer", "reimg", "lightbox"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "David Colón",
+			"email": "phpbb@davidiq.com",
+			"homepage": "http://www.davidiq.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"phpbb/epv": "master"
+	},
+	"extra": {
+		"display-name": "ReIMG Image Resizer",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.1,<3.3.0@dev"
+		},
+		"version-check": {
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/reimg",
+			"filename": "version_check"
+		}
+	}
+}

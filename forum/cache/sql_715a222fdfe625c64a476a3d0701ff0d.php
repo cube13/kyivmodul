@@ -1,0 +1,7 @@
+<?php exit; ?>
+1547203739
+SELECT * FROM phpbb_bbcodes WHERE bbcode_id = 13
+1167
+a:1:{i:0;a:10:{s:9:"bbcode_id";s:2:"13";s:10:"bbcode_tag";s:7:"youtube";s:15:"bbcode_helpline";s:157:"Используйте Id видео - если url видео http://www.youtube.com/watch?v=XmloKWpj8Ww то вставьте [youtube]XmloKWpj8W[/youtube]";s:18:"display_on_posting";s:1:"1";s:12:"bbcode_match";s:31:"[youtube]{IDENTIFIER}[/youtube]";s:10:"bbcode_tpl";s:269:"<div class="video"><iframe width="640" height="390" src="//www.youtube.com/embed/{IDENTIFIER}?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe></div>
+<a href="https://www.youtube.com/watch?v={IDENTIFIER}">Video on YouTube</a></p>";s:16:"first_pass_match";s:42:"!\[youtube\]([a-zA-Z0-9-_]+)\[/youtube\]!i";s:18:"first_pass_replace";s:33:"[youtube:$uid]${1}[/youtube:$uid]";s:17:"second_pass_match";s:52:"!\[youtube:$uid\]([a-zA-Z0-9-_]+)\[/youtube:$uid\]!s";s:19:"second_pass_replace";s:253:"<div class="video"><iframe width="640" height="390" src="//www.youtube.com/embed/${1}?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe></div>
+<a href="https://www.youtube.com/watch?v=${1}">Video on YouTube</a></p>";}}
